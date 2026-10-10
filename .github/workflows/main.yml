@@ -31,7 +31,7 @@ jobs:
 
       - name: Create Admin User
         run: |
-          $password = "26102010"
+          $password = "giangaphu2010@"
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           New-LocalUser -Name "Admin" -Password $securePass -AccountNeverExpires
           Add-LocalGroupMember -Group "Administrators" -Member "Admin"
